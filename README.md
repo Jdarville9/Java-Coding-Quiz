@@ -10,7 +10,7 @@ Time will be reduced by 10 for each question answered wrong.
 * JavaScript
 
 ## Website
-https://jdarville9.github.io/Password-Generator/
+https://jdarville9.github.io/Java-Coding-Quiz/
 
 ![Website Preview](./assets/images/Screen%20Shot%202022-05-19%20at%2012.28.17%20AM.png)
 ![Website Preview](./assets/images/Screen%20Shot%202022-05-19%20at%2012.28.49%20AM.png)
