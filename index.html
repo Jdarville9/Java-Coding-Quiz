@@ -9,15 +9,57 @@
   </head>
   <body>
     <header>
-        <p>View High Scores</p>
-        <p>Time:</p>
+        <p>Java Quiz</p>
+        <p >Time: <span id="timer">000</span></p>
     </header>
     <main>
-        <div id="question-block" class="question-block">
+      <section class="content-block" id="question-block">
+        <div class="inner-block" id="quiz-intro">
             <h2 id="Heading">Coding Quiz Challenge</h2>
-            <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds</p>
-            <button class="btn" id="start-quiz" type="button">Start Quiz</button>
+            
+            <div class="content-row">
+              <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds</p>
+            </div>
+              <button class="btn" id="start-quiz" type="button">Start Quiz</button>
         </div>
+        
+        <div class="inner-block hide" id="inner-block">
+          <div class="question">
+            <p id="question">What does xyz?</p>
+          </div>
+
+          <div class="question-choices" id="answers"></div>
+        </div>
+
+        <p class="confirm" id="wrong-right"></p>
+
+        <div class="inner-block hide" id="finish-quiz">
+          <h2 class="heading">
+            CONGRATULATIONS!
+          </h2>
+
+          <p>You have completed the quiz</p>
+          
+          <div class="content-row">
+            <p id="final-score">You scored <span id="points-scored">____</span> points!</p>
+          </div>          
+          
+          <div class="content-row">
+            <input type="text" id="enter-initials" placeholder="ENTER initials">
+          </div>
+
+          <button class="btn" id="submit-score">Submit</button>
+        </div>
+
+        <div class="hide" id="high-scores">
+          <h3 class="inner-block">Highscore</h3>
+          <div id="player-info">
+            
+          </div>
+        </div>
+
+        
+      </section>
     </main>
     <script src="./assets/js/script.js"></script>
   </body>
